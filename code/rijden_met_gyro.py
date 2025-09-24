@@ -30,22 +30,11 @@ def gyro_rechtdoor(speed, angle):
                 motorRechts.stop()
                 motorRechts.run(500+(yaw*100))
                 yaw = hub.imu.heading()
-                print(yaw, ' yaw')
-    #while yaw > 0.1 or yaw < -0.1:
-        #while yaw < -0.1:
-            #motorLinks.stop()
-            #motorLinks.run(-500-(abs(yaw)*100))
-            #yaw = hub.imu.heading()
-            #print(yaw, ' yaw')
-        #while yaw > 0.1:
-            #motorRechts.stop()
-            #motorRechts.run(500+(yaw*100))
-            #yaw = hub.imu.heading()
-            #print(yaw, ' yaw')          
+                print(yaw, ' yaw')          
     yaw = hub.imu.heading()
     print(yaw)
     motorLinks.stop()
     motorRechts.stop()
 
 
-gyro_rechtdoor(500, 1080)
+gyro_rechtdoor(500, 500)

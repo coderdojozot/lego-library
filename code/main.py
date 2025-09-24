@@ -3,7 +3,6 @@ from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSenso
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
-from programma1 import show_number
 hub = PrimeHub()
 start_stop = 0
 programma = 0
@@ -27,6 +26,6 @@ while True:
         elif start_stop == 1:
             start_stop = 0
     if programma == 1 and start_stop == 1:
-        show_number(1)
-        wait(5000)
         start_stop = 0
+        import programma1
+        
