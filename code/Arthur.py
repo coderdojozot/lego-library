@@ -1,3 +1,9 @@
+####################################################################################
+# Dit is een testje van Arthur om de basis van de motoren en de gyro te begrijpen
+# 
+# Laatste update: 24/09/2025 - eerste versie
+####################################################################################
+
 from pybricks.hubs import PrimeHub
 from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
