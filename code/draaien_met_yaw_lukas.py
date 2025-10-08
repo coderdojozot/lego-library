@@ -4,8 +4,6 @@ from pybricks.parameters import Port, Direction, Stop
 from pybricks.tools import wait, StopWatch
 timer = StopWatch()
 hub = PrimeHub()
-motorRechts = Motor(Port.D)
-motorLinks = Motor(Port.E, Direction.COUNTERCLOCKWISE)
 
 def draai_met_yaw(speed, hoek):
     start_yaw = hub.imu.heading()         # beginhoek
@@ -42,5 +40,5 @@ def draai_met_yaw(speed, hoek):
     motorRechts.stop()
 
 
-draai_met_yaw(500, 90)#(speed, hoek)
+
 

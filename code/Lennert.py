@@ -20,20 +20,7 @@ TURN_RATE = 70
 TURN_ACC = 70
 
 
-left_motor = Motor(port=Port.C, positive_direction=Direction.COUNTERCLOCKWISE)
-right_motor = Motor(port=Port.E)
-drivebase = DriveBase(left_motor, right_motor, 62.4, 208)
-
-left_attachment_motor = Motor(port=Port.B)
-right_attachment_motor = Motor(port=Port.F)
-drivebase.use_gyro(True)
-sensor = ColorSensor(Port.A)
-
-
-drivebase.settings(straight_speed=STRAIGHT_SPEED,
-                       straight_acceleration=STRAIGHT_ACC,
-                       turn_rate=TURN_RATE,
-                       turn_acceleration=TURN_ACC)
+sensor = ColorSensor(Port.C)
 
 def vooruit(x):
     drivebase.straight(x)
@@ -59,8 +46,9 @@ while True:
     if color == laatste_kleur or color == Color.NONE:
         continue
     laatste_kleur = color    
-    if color == Color.RED:     
-         missieRood()
+    if color == Color.YELLOW: 
+        wait(100)    
+        import missie_4_lukas_lennert
     if color == Color.BLUE:
         missieBlauw()
     
