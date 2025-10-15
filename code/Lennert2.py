@@ -2,7 +2,7 @@
 # Dit is een eerste versie van Lennert om de de missies te laten starten door herkenning
 # van een kleur door de kleurensensor
 #
-# Laatste update: 24/09/2025 - eerste versie
+# Laatste update: 15/10/2025
 ####################################################################################
 
 from pybricks.hubs import PrimeHub
