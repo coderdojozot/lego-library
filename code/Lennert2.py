@@ -22,8 +22,10 @@ TURN_ACC = 70
 
 leftmotor = Motor(port=Port.B, positive_direction=Direction.COUNTERCLOCKWISE)
 rightmotor = Motor(port=Port.F)
+
 drivebase = DriveBase(leftmotor, rightmotor, 62.4, 80)
 drivebase.use_gyro(True)
+
 rechterarm = Motor(Port.A,positive_direction=Direction.CLOCKWISE)
 
 sensor = ColorSensor(Port.D)
@@ -34,11 +36,10 @@ def achteruit(x):
     drivebase.straight(-x)
 def rechts(x):
     drivebase.turn(x)
-
+def links(x):
+    drivebase.turn(-x)
 def missieRood():
-    vooruit(100)
-
-  
+    vooruit(100) 
 def missieBlauw():
     achteruit(100)
 
@@ -57,7 +58,12 @@ def missieBlauw():
 #         import missie_4_lukas_lennert
 #     if color == Color.BLUE:
 #         missieBlauw
-x = 10000
+x = 270
 
-drivebase.straight(510)
-rechterarm.run_angle(10000,x)
+rechterarm.run_angle(700,300)
+vooruit(750)
+links(45)
+vooruit(100)
+rechterarm.run_angle(700,-30)
+links(45)
+
