@@ -2,7 +2,7 @@
 # Dit is een eerste versie van Lennert om de de missies te laten starten door herkenning
 # van een kleur door de kleurensensor
 #
-# Laatste update: 24/09/2025 - eerste versie
+# Laatste update: 15/10/2025
 ####################################################################################
 
 from pybricks.hubs import PrimeHub
@@ -63,7 +63,19 @@ x = 270
 rechterarm.run_angle(700,300)
 vooruit(750)
 links(45)
+rechterarm.run_angle(700,-20)
 vooruit(100)
-rechterarm.run_angle(700,-30)
+links(15)
+achteruit(50)
+rechterarm.run_angle(700,-100)
+links(20)
+vooruit(100)
+links(10)
+vooruit(1000)
+rechterarm.run_angle(700,120)
+rechts(45)
+vooruit(170)
 links(45)
+vooruit(200)
+rechterarm.run_angle(700,-120)
 
