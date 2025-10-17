@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Pybricks Bluetooth Upload",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "pybricksdev",
+                "run",
+                "ble",
+                "--bluetooth-adapter",
+                "auto",
+                "${workspaceFolder}/code/start_code.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
