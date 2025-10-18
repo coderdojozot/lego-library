@@ -35,6 +35,12 @@ def links(x):
 
 vooruit(300)
 rechterarm.run_angle(600, -182)
+STRAIGHT_SPEED = 2000
 achteruit(50)
+STRAIGHT_SPEED = 900
 rechterarm.run_angle(600, 180)
-achteruit(250)
+links(90)
+vooruit(180)
+rechts(90)
+vooruit(250)
+achteruit(800)
