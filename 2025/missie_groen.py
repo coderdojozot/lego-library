@@ -1,0 +1,20 @@
+from functies import *
+# dit is voor missie 5 en 6
+def missie_groen_start():
+    rechterarm_draai(300)
+    vooruit(750)
+    links(45)
+    rechterarm_draai(-20)
+    vooruit(120)
+    links(15)
+    achteruit(50)
+    rechterarm_draai(-100)
+    links(30)
+    vooruit(100)
+    vooruit(1000)
+    rechterarm_draai(120)
+    rechts(45)
+    vooruit(120)
+    links(45)
+    vooruit(200)
+    rechterarm_draai(-120)
