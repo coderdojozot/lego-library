@@ -2,7 +2,7 @@ from pybricks.hubs import PrimeHub
 from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
-from pybricks.tools import wait, StopWatch, run_task,hub_menu
+from pybricks.tools import wait, StopWatch, run_task, hub_menu, multitask,
 
 STANDAARD_DRAAISNELHEID = 600
 STANDAARD_SNELHEID = 800
@@ -21,22 +21,24 @@ linkerarm = Motor(Port.E)
 sensor = ColorSensor(Port.D)
 
 
-def vooruit(afstand):
-    drivebase.straight(afstand)
 
-def vooruit_met_snelheid(afstand, snelheid):
+
+def vooruit(afstand, snelheid = STANDAARD_SNELHEID):
     drivebase.settings(straight_speed = snelheid)
     drivebase.straight(afstand)
-    drivebase.settings(straight_speed = STANDAARD_SNELHEID)
 
-def achteruit(afstand):
+
+def achteruit(afstand, snelheid = STANDAARD_SNELHEID):
+    drivebase.settings(straight_speed = snelheid)
     drivebase.straight(-afstand)
 
-def rechts(hoek):
+def rechts(hoek, snelheid = STANDAARD_DRAAISNELHEID):
     drivebase.turn(hoek)
+    drivebase.settings(turn_rate = snelheid)
 
-def links(hoek):
+def links(hoek, snelheid = STANDAARD_DRAAISNELHEID):
     drivebase.turn(-hoek)
+    drivebase.settings(turn_rate = snelheid)
 
 def rechterarm_draai(hoek):
     rechterarm.run_angle(STANDAARD_DRAAISNELHEID, hoek)
