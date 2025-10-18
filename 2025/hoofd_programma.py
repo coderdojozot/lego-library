@@ -14,7 +14,7 @@ while True:
         selected = hub_menu("A", "F")  
         if selected == "A":
              hub.light.on(color)
-             missie_groen_start()
+             run_task(missie_groen_start())
              hub.light.off()
              hub.display.off()
               
@@ -24,7 +24,7 @@ while True:
         selected = hub_menu("A", "F")  
         if selected == "A":
              hub.light.on(color)
-             missie_blauw_start()
+             run_task(missie_blauw_start())
              hub.light.off()
              hub.display.off()
 
@@ -33,6 +33,6 @@ while True:
         selected = hub_menu("A", "F")  
         if selected == "A":
              hub.light.on(color)
-             missie_geel_start()
+             run_task(missie_geel_start())
              hub.light.off()
              hub.display.off()

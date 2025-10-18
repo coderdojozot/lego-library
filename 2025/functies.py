@@ -4,7 +4,9 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch, run_task, hub_menu, multitask,
 
-STANDAARD_DRAAISNELHEID = 600
+STANDAARD_WAGEN_DRAAISNELHEID = 600
+STANDAARD_WAGEN_ACCELERATIE = 600
+STANDAARD_ARM_DRAAISNELHEID = 600
 STANDAARD_SNELHEID = 800
 
 hub = PrimeHub()
@@ -13,7 +15,8 @@ rightmotor = Motor(port=Port.F)
 
 drivebase = DriveBase(leftmotor, rightmotor, 62.4, 80)
 drivebase.use_gyro(True)
-drivebase.settings(straight_speed = STANDAARD_SNELHEID)
+drivebase.settings(straight_speed = STANDAARD_WAGEN_DRAAISNELHEID)
+drivebase.settings(straight_acceleration = STANDAARD_WAGEN_ACCELERATIE)
 
 rechterarm = Motor(Port.A,positive_direction=Direction.CLOCKWISE)
 linkerarm = Motor(Port.E)
@@ -21,28 +24,26 @@ linkerarm = Motor(Port.E)
 sensor = ColorSensor(Port.D)
 
 
-
-
-def vooruit(afstand, snelheid = STANDAARD_SNELHEID):
+async def vooruit(afstand, snelheid = STANDAARD_WAGEN_DRAAISNELHEID, acceleratie = STANDAARD_WAGEN_ACCELERATIE):
     drivebase.settings(straight_speed = snelheid)
-    drivebase.straight(afstand)
+    drivebase.settings(straight_acceleration=acceleratie)
+    await drivebase.straight(afstand)
 
-
-def achteruit(afstand, snelheid = STANDAARD_SNELHEID):
+async def achteruit(afstand, snelheid = STANDAARD_WAGEN_DRAAISNELHEID, acceleratie = STANDAARD_WAGEN_ACCELERATIE):
     drivebase.settings(straight_speed = snelheid)
-    drivebase.straight(-afstand)
+    drivebase.settings(straight_acceleration=acceleratie)
+    await drivebase.straight(-afstand)
 
-def rechts(hoek, snelheid = STANDAARD_DRAAISNELHEID):
-    drivebase.turn(hoek)
+async def rechts(hoek, snelheid = STANDAARD_WAGEN_DRAAISNELHEID):
     drivebase.settings(turn_rate = snelheid)
+    await drivebase.turn(hoek)
 
-def links(hoek, snelheid = STANDAARD_DRAAISNELHEID):
-    drivebase.turn(-hoek)
+async def links(hoek, snelheid = STANDAARD_WAGEN_DRAAISNELHEID):
     drivebase.settings(turn_rate = snelheid)
+    await drivebase.turn(-hoek)
 
-def rechterarm_draai(hoek):
-    rechterarm.run_angle(STANDAARD_DRAAISNELHEID, hoek)
+async def rechterarm_draai(hoek):
+    await rechterarm.run_angle(STANDAARD_ARM_DRAAISNELHEID, hoek)
 
-def linkerarm_draai(hoek):
-    linkerarm.run_angle(STANDAARD_DRAAISNELHEID, hoek)
-
+async def linkerarm_draai(hoek):
+    await linkerarm.run_angle(STANDAARD_ARM_DRAAISNELHEID, hoek)
