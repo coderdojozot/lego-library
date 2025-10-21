@@ -1,0 +1,46 @@
+from pybricks.hubs import PrimeHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait, StopWatch, run_task,hub_menu
+
+
+hub = PrimeHub()
+
+STRAIGHT_SPEED = 900
+STRAIGHT_ACC = 300
+TURN_RATE = 70
+TURN_ACC = 70
+
+
+leftmotor = Motor(port=Port.B, positive_direction=Direction.COUNTERCLOCKWISE)
+rightmotor = Motor(port=Port.F)
+
+drivebase = DriveBase(leftmotor, rightmotor, 62.4, 80)
+drivebase.use_gyro(True)
+
+rechterarm = Motor(Port.A,positive_direction=Direction.CLOCKWISE)
+
+sensor = ColorSensor(Port.D)
+
+def vooruit(x):
+    drivebase.straight(x)
+def achteruit(x):
+    drivebase.straight(-x)
+def rechts(x):
+    drivebase.turn(x)
+def links(x):
+    drivebase.turn(-x)
+
+
+vooruit(300)
+rechterarm.run_angle(600, -182)
+STRAIGHT_SPEED = 2000
+achteruit(50)
+STRAIGHT_SPEED = 900
+rechterarm.run_angle(600, 180)
+links(90)
+vooruit(180)
+rechts(90)
+vooruit(250)
+achteruit(800)
