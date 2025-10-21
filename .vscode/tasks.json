@@ -4,19 +4,49 @@
         {
             "label": "Pybricks Bluetooth Upload",
             "type": "shell",
-            "command": "python",
+            "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
             "args": [
                 "-m",
                 "pybricksdev",
+                "-v",
+                "-d",
                 "run",
                 "ble",
-                "--bluetooth-adapter",
-                "auto",
+                "--wait",
+                "--stay-connected",
+                "--start",
                 "${workspaceFolder}/code/start_code.py"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true,
+                "close": false
+            },
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": ".",
+                    "file": 1,
+                    "location": 2,
+                    "message": 3
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "pybricksdev",
+                    "endsPattern": "Connection test completed!"
+                }
+            },
+            "isBackground": true,
+            "options": {
+                "env": {
+                    "PYTHONUNBUFFERED": "1",
+                    "PYTHONDONTWRITEBYTECODE": "1"
+                }
             }
         }
     ]

@@ -5,8 +5,13 @@ from pybricks.tools import wait
 # Initialize hub
 hub = PrimeHub()
 
-# Simple test sequence
+# Test sequence with multiple colors
 print("Starting connection test...")
-hub.light.on(Color.GREEN)
-wait(1000)
-print("Connection successful!")
+
+# Try different colors to make sure we're connected
+for color in [Color.RED, Color.GREEN, Color.BLUE]:
+    print(f"Setting light to {color}")
+    hub.light.on(color)
+    wait(1000)
+
+print("Connection test completed!")
