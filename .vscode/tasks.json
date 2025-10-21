@@ -5,17 +5,17 @@
             "label": "Pybricks Bluetooth Upload",
             "type": "shell",
             "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+            
             "args": [
                 "-m",
                 "pybricksdev",
-                "-v",
-                "-d",
                 "run",
                 "ble",
-                "--wait",
-                "--stay-connected",
+                "--name",
+                "Pybricks Hub",
                 "--start",
-                "${workspaceFolder}/code/start_code.py"
+                
+                "${workspaceFolder}/code/start_code.py" /* pas hier het pad aan voor welk bestand dat je wilt uitvoeren*/
             ],
             "group": {
                 "kind": "build",
@@ -23,31 +23,11 @@
             },
             "presentation": {
                 "reveal": "always",
-                "panel": "dedicated",
-                "clear": true,
+                "panel": "new",
                 "focus": true,
                 "close": false
             },
-            "problemMatcher": {
-                "pattern": {
-                    "regexp": ".",
-                    "file": 1,
-                    "location": 2,
-                    "message": 3
-                },
-                "background": {
-                    "activeOnStart": true,
-                    "beginsPattern": "pybricksdev",
-                    "endsPattern": "Connection test completed!"
-                }
-            },
-            "isBackground": true,
-            "options": {
-                "env": {
-                    "PYTHONUNBUFFERED": "1",
-                    "PYTHONDONTWRITEBYTECODE": "1"
-                }
-            }
+            "problemMatcher": []
         }
     ]
 }
