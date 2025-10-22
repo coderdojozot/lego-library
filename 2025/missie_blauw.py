@@ -1,9 +1,15 @@
 from functies import *
 
 async def missie_blauw_start():
-    await vooruit(100)
-    await achteruit(100)
-    await vooruit(100,snelheid=50)
+    await vooruit(300)
+    await rechterarm.run_angle(600, -182)
+    await achteruit(50)
+    await rechterarm.run_angle(600, 180)
+    await links(90)
+    await vooruit(180)
+    await rechts(90)
+    await vooruit(250)
+    await achteruit(750)
 
 if __name__ == "__main__":
     run_task(missie_blauw_start())
