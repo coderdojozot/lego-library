@@ -16,6 +16,7 @@
                 "--start",
                 
                 "${workspaceFolder}/code/start_code.py" /* pas hier het pad aan voor welk bestand dat je wilt uitvoeren*/
+                /* druk dan op ctrl+shift+B */
             ],
             "group": {
                 "kind": "build",
