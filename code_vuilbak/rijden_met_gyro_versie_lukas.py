@@ -9,8 +9,8 @@ from pybricks.robotics import DriveBase
 
 hub = PrimeHub()
 
-motorRechts = Motor(Port.A)
-motorLinks = Motor(Port.E, Direction.COUNTERCLOCKWISE)
+motorRechts = Motor(Port.E)
+motorLinks = Motor(Port.F, Direction.COUNTERCLOCKWISE)
 
 WHEEL_CIRCUMFERENCE = 196.0  
 
