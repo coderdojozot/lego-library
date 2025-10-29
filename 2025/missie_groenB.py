@@ -1,5 +1,5 @@
 from functies import *
-# dit is voor missie 
+# dit is voor missie 1 en 14 --> 14 werkt nog niet helemaal
 async def missie_groenB_start():
     await rechterarm_draai(50)
     await vooruit(700,1000,500)
