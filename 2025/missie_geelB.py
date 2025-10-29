@@ -1,5 +1,7 @@
 from functies import *
 
+# Simon - Arthur - Lennert
+# dit is voor missie 11 - enkel terugrijden nog
 async def missie_geelB_start():
     await draai_rechts_met_straal(90,300)
     await vooruit(578)
