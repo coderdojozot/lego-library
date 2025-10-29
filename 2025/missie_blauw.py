@@ -1,4 +1,6 @@
 from functies import *
+
+# Arthur
 # dit is voor missie 12 -- werkt volledig
 async def missie_blauw_start():
     await vooruit(300)
