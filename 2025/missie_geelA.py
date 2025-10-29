@@ -1,6 +1,7 @@
 from functies import *
 
-# in deze functie komt alle code voor de missie
+# Luca
+# dit is voor missie 3, 9, 10 
 async def missie_geelA_start():
    await vooruit(695)
    await rechts(85)
