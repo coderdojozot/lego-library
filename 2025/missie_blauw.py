@@ -1,5 +1,5 @@
 from functies import *
-
+# dit is voor missie 12 -- werkt volledig
 async def missie_blauw_start():
     await vooruit(300)
     await rechterarm.run_angle(600, -182)
