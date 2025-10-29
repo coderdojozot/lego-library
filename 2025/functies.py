@@ -2,7 +2,7 @@ from pybricks.hubs import PrimeHub
 from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
-from pybricks.tools import wait, StopWatch, run_task, hub_menu, multitask,
+from pybricks.tools import wait, StopWatch, run_task, hub_menu, multitask
 
 STANDAARD_WAGEN_DRAAISNELHEID = 600
 STANDAARD_WAGEN_ACCELERATIE = 600

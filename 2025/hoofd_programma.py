@@ -1,6 +1,6 @@
 from functies import *
 from missie_blauw import missie_blauw_start
-from missie_groen import missie_groen_start
+from missie_groenA import missie_groen_start
 from missie_geel import missie_geel_start
 laatste_kleur = Color.MAGENTA
 
