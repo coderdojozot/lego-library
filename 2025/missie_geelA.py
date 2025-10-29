@@ -1,7 +1,7 @@
 from functies import *
 
 # in deze functie komt alle code voor de missie
-async def missie_geel_start():
+async def missie_geelA_start():
    await vooruit(695)
    await rechts(85)
    await vooruit(355)
@@ -22,4 +22,4 @@ async def missie_geel_start():
 
 # laat dit zeker staan!
 if __name__ == "__main__":
-    run_task(missie_geel_start())
+    run_task(missie_geelA_start())
