@@ -4,7 +4,7 @@
         {
             "label": "Pybricks Bluetooth Upload",
             "type": "shell",
-            "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+            "command": "${workspaceFolder}\\VENV\\Scripts\\python.exe",
             
             "args": [
                 "-m",
@@ -15,7 +15,7 @@
                 "Pybricks Hub",
                 "--start",
                 
-                "${workspaceFolder}/code/start_code.py" /* pas hier het pad aan voor welk bestand dat je wilt uitvoeren*/
+                "${workspaceFolder}/code_vuilbak/scan.py"/* pas hier het pad aan voor welk bestand dat je wilt uitvoeren*/
                 /* druk dan op ctrl+shift+B */
             ],
             "group": {
