@@ -2,7 +2,6 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
 # C extensions
 *.so
 
@@ -207,3 +206,4 @@ marimo/_lsp/
 *.zip
 
 __marimo__/
+.vscode/tasks.json
