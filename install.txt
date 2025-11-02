@@ -1,5 +1,0 @@
-.\.venv\Scripts\activate
-
-source source VENV/bin/activate
-
-pip install pybricks-micropython pybricksdev
