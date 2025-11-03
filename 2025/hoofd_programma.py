@@ -3,6 +3,11 @@ from missie_blauw import missie_blauw_start
 from missie_groenA import missie_groenA_start
 from missie_groenB import missie_groenB_start
 from missie_geel import missie_geel_start
+
+##########################################################################
+##  NIKS AAN HET HOOFDPROGRAMMA VERANDEREN ZONDER OVERLEG MET IEDEREEN  ##
+##########################################################################
+
 laatste_kleur = Color.MAGENTA
 
 while True:
