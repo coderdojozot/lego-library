@@ -2,7 +2,7 @@ from pybricks.hubs import PrimeHub
 from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
 from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.tools import wait, StopWatch
-from rijden_met_gyro_versie_lukas import gyro_rechtdoor, draai_met_yaw
+from code_vuilbak.Xprobeersels.rijden_met_gyro_versie_lukas import gyro_rechtdoor, draai_met_yaw
 hub = PrimeHub()
 
 left_attachment_motor = Motor(port=Port.F)

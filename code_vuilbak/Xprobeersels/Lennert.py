@@ -48,7 +48,7 @@ while True:
     laatste_kleur = color    
     if color == Color.YELLOW: 
         wait(100)    
-        import missie_4_lukas_lennert
+        import code_vuilbak.Xprobeersels.missie_4_lukas_lennert as missie_4_lukas_lennert
     if color == Color.BLUE:
         missieBlauw()
     

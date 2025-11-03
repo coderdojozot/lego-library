@@ -9,7 +9,7 @@ from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch
 
 # Hier doen we de import
-from rijden_met_gyro_versie_lukas import gyro_rechtdoor
+from code_vuilbak.Xprobeersels.rijden_met_gyro_versie_lukas import gyro_rechtdoor
 
 # niet zeker of dit nodig is, want zit ook al in de import
 hub = PrimeHub

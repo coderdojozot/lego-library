@@ -3,7 +3,7 @@ from pybricks.pupdevices import Motor, UltrasonicSensor
 from pybricks.parameters import Direction, Port
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait
-from rijden_met_gyro_versie_lukas import draai_met_yaw, gyro_rechtdoor
+from code_vuilbak.Xprobeersels.rijden_met_gyro_versie_lukas import draai_met_yaw, gyro_rechtdoor
 hub = InventorHub()
 
 motor_sensor = Motor(Port.B)

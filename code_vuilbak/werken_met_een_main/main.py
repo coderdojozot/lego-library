@@ -37,5 +37,5 @@ while True:
             start_stop = 0
     if programma == 1 and start_stop == 1:
         start_stop = 0
-        import programma1
+        import code_vuilbak.werken_met_imports.programma1 as programma1
         
