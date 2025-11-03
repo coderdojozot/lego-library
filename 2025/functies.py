@@ -4,6 +4,10 @@ from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
 from pybricks.robotics import DriveBase
 from pybricks.tools import wait, StopWatch, run_task, hub_menu, multitask
 
+##########################################################################
+##  NIKS AAN HET HOOFDPROGRAMMA VERANDEREN ZONDER OVERLEG MET IEDEREEN  ##
+##########################################################################
+
 STANDAARD_WAGEN_DRAAISNELHEID = 600
 STANDAARD_WAGEN_ACCELERATIE = 600
 STANDAARD_ARM_DRAAISNELHEID = 600
