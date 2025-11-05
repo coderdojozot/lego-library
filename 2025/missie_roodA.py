@@ -4,6 +4,13 @@ from functies import *
 # dit is voor missie 9 - 10 
 
 async def missie_roodA_start():
+    
+    await rechterarm_draai(240)
+    await vooruit(510)
+    await links(130)
+    await rechterarm_draai(-240)
+    await vooruit(170)
+    await rechts(45)
   # Dit is voorbeeldcode voor de start van een nieuw
   # programma. Pas deze code aan voor jouw extensie.
   
