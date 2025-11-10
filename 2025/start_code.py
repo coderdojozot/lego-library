@@ -1,9 +1,11 @@
 from functies import *
 
+linkerarm_gears = [30, 10]
+rechterarm_gears = [30, 10]
 # [Naam]
 # dit is voor missie [] 
 
-async def missie_[kleur invullen]_start():
+async def missie_[kleur_invullen]_start():
   # Dit is voorbeeldcode voor de start van een nieuw
   # programma. Pas deze code aan voor jouw extensie.
   
