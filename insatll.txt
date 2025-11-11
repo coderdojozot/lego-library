@@ -1,0 +1,24 @@
+# 1️⃣ Ga naar je projectmap
+cd C:\Users\CoderDojo\Documents\GitHub\lego-library
+
+# 2️⃣activeer de virtuele omgeving
+VENV_WIN\Scripts\activate
+
+# 3️⃣ Upgrade pip en installeer alle benodigde pakketten
+pip install --upgrade pip setuptools wheel
+pip install pybricks pybricksdev bleak pyserial hidapi winrt-runtime winrt-Windows.Devices.Bluetooth winrt-Windows.Devices.Enumeration
+
+# 4️⃣ Controleer of pybricksdev werkt
+python -m pybricksdev -h
+
+# 5️⃣ Scan naar LEGO hubs (optioneel, om naam of MAC te vinden)
+python -m pybricksdev lwp3 repl  # start REPL, hub moet aan staan
+
+# 6️⃣ Upload en run een script op de hub via BLE
+python -m pybricksdev run ble --name "Pybricks Hub" "code_vuilbak\poortscanner\scan.py"
+
+# 7️⃣ VS Code automatisch VENV_WIN activeren (maak .vscode/settings.json met dit erin)
+# {
+#     "python.defaultInterpreterPath": "${workspaceFolder}/VENV_WIN/Scripts/python.exe",
+#     "terminal.integrated.shellArgs.windows": ["-noexit", "-command", "VENV_WIN\\Scripts\\activate"]
+# }
