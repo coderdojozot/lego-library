@@ -1,0 +1,27 @@
+{
+  // Stel in dat de juiste terminal automatisch start en je venv activeert
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": [
+        "-noexit",
+        "-command",
+        "& { . .\\VENV_WIN\\Scripts\\Activate.ps1 }"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/bin/bash",
+      "icon": "terminal-bash",
+      "args": [
+        "--init-file",
+        "${workspaceFolder}/VENV/bin/activate"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "bash"
+}
