@@ -51,14 +51,7 @@ async def rechterarm_draai(hoek):
 
 async def linkerarm_draai(hoek):
     await linkerarm.run_angle(STANDAARD_ARM_DRAAISNELHEID, hoek)
-async def linkerarm_gear(hoek, gear=[0]):
-    if gear == 0:
-        linkerarm.run_angle(hoek)
-    else:
-        for gear in gear:
             
-
-    await linkerarm_gear.run_angle(STANDAARD_ARM_DRAAISNELHEID, hoek)
 async def draai_rechts_met_straal(hoek, straal, snelheid = STANDAARD_WAGEN_DRAAISNELHEID):
     drivebase.settings(turn_rate = snelheid)
     await drivebase.curve(straal, hoek)
