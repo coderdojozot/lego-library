@@ -8,13 +8,14 @@ from functies import *
 # Startveld rechts, 2de zwart streepje van rechts
 
 async def missie_roodB_start():
-     await vooruit(425)
-     await multitask(linkerarm.run_angle(900,-168),rechterarm.run_angle(900,-168))
-     await multitask(linkerarm.run_angle(900,168),rechterarm.run_angle(900,168))
-     await multitask(linkerarm.run_angle(900,-168),rechterarm.run_angle(900,-168))
-     await multitask(linkerarm.run_angle(900,168),rechterarm.run_angle(900,168))
-     await multitask(linkerarm.run_angle(900,-168),rechterarm.run_angle(900,-168))
-     await multitask(linkerarm.run_angle(900,168),rechterarm.run_angle(900,168))
+     await achteruit(15)
+     await vooruit(440)
+     await multitask(linkerarm.run_angle(1000,-168),rechterarm.run_angle(1000,-168))
+     await multitask(linkerarm.run_angle(1000,168),rechterarm.run_angle(1000,168))
+     await multitask(linkerarm.run_angle(1000,-168),rechterarm.run_angle(1000,-168))
+     await multitask(linkerarm.run_angle(1000,168),rechterarm.run_angle(1000,168))
+     await multitask(linkerarm.run_angle(1000,-168),rechterarm.run_angle(1000,-168))
+     await multitask(linkerarm.run_angle(1000,168),rechterarm.run_angle(1000,168))
      await vooruit(-418)
      
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
