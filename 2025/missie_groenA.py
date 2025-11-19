@@ -2,7 +2,7 @@ from functies import *
 
 # Lennert - Lucas
 # dit is voor missie 1 en 14 --> 14 werkt nog niet helemaal
-async def missie_groenB_start():
+async def missie_groenA_start():
     await rechterarm_draai(50)
     await vooruit(700,1000,500)
     await achteruit(200)
@@ -16,7 +16,7 @@ async def missie_groenB_start():
     await rechterarm_draai(50)
     await draai_rechts_met_straal(90,-200)
     await achteruit(350,1000,1000)
-    await vooruit(200)
+    await vooruit(180)
     await draai_links_met_straal(45,200)
     await rechterarm_draai(-100)
     await multitask(links(10), rechterarm_draai(20))
@@ -24,8 +24,9 @@ async def missie_groenB_start():
     await rechterarm_draai(50)
     await achteruit(110)
     await links(45)
+    await achteruit(200)
     await linkerarm_draai(-135)
-    await vooruit(1180)
+    await vooruit(1380)
     await multitask(rechterarm_draai(50),linkerarm_draai(49))
     await links(55)
     await achteruit(180)
@@ -37,4 +38,4 @@ async def missie_groenB_start():
     # await links(90)
    
 if __name__ == "__main__":
-    run_task(missie_groenB_start())
+    run_task(missie_groenA_start())

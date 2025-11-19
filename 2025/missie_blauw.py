@@ -8,7 +8,7 @@ async def missie_blauw_start():
     await achteruit(50)
     await rechterarm.run_angle(600, 180)
     await links(90)
-    await vooruit(180)
+    await vooruit(200)
     await rechts(90)
     await vooruit(250)
     await achteruit(750)

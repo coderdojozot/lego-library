@@ -26,12 +26,12 @@ while True:
     if color == Color.GREEN: 
         hub.light.blink(color,[500,500])
         selected = hub_menu("A", "B")  
+       
         if selected == "A":
-             hub.light.on(color)
-             run_task(missie_groenA_start())
-             hub.light.off()
-             hub.display.off()
-              
+            hub.light.on(color)
+            run_task(missie_groenA_start())
+            hub.light.off()
+            hub.display.off()
         
     if color == Color.BLUE:
         hub.light.blink(color,[500,500])
