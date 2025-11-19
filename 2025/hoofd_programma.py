@@ -3,8 +3,8 @@ from missie_blauw import missie_blauw_start
 from missie_groenA import missie_groenA_start
 from missie_geelA import missie_geelA_start
 from missie_geelB import missie_geelB_start
-from missie_roodA import missie_roodA_start
-from missie_roodB import missie_roodB_start
+from missie_paarsA import missie_paarsA_start
+from missie_paarsB import missie_paarsB_start
 
 ##########################################################################
 ##  NIKS AAN HET HOOFDPROGRAMMA VERANDEREN ZONDER OVERLEG MET IEDEREEN  ##
@@ -61,11 +61,11 @@ while True:
         selected = hub_menu("A", "B")  
         if selected == "A":
              hub.light.on(color)
-             run_task(missie_roodA_start())
+             run_task(missie_paarsA_start())
              hub.light.off()
              hub.display.off()
         if selected == "B":
              hub.light.on(color)
-             run_task(missie_roodB_start())
+             run_task(missie_paarsB_start())
              hub.light.off()
              hub.display.off()
