@@ -2,7 +2,7 @@
 cd C:\Users\CoderDojo\Documents\GitHub\lego-library
 
 # 2️⃣ Maak en activeer de virtuele omgeving
-VENV_WIN\Scripts\activate
+.venv\Scripts\activate
 
 # 3️⃣ Upgrade pip en installeer alle benodigde pakketten
 pip install --upgrade pip setuptools wheel
