@@ -10,6 +10,8 @@ from missie_paarsB import missie_paarsB_start
 ##  NIKS AAN HET HOOFDPROGRAMMA VERANDEREN ZONDER OVERLEG MET IEDEREEN  ##
 ##########################################################################
 
+# ORANJE MISSIE NOG TOEVOEGEN!!
+
 laatste_kleur = Color.MAGENTA
 
 paars = [4 ,5 ,6]
@@ -56,7 +58,7 @@ while True:
              hub.light.off()
              hub.display.off()
     
-    if sensor.reflection() in orange:
+    if sensor.reflection() in paars:
         hub.light.blink(color,[500,500])
         selected = hub_menu("A", "B")  
         if selected == "A":
