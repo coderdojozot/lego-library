@@ -2,11 +2,21 @@ from functies import *
 
 # Arthus
 # dit is voor missie 9 - 10 
+# startlocatie: rechter startzone, streepje 3.1 van rechts
 
-async def missie_roodA_start():
+
+async def missie_roodA_start():     
+
     
+           # molen ARM
+    await multitask(vvooruit(770),linkerarm_draai(-1000))
+    await rechts (50)
+    await linkerarm(950)
+    await vooruit(50)
+    await linkerarm_draai(-1200)
+    await links(93)
     await rechterarm_draai(260)
-    await vooruit(510)
+    await vooruit(150)
     await links(130)
     await achteruit(50)
     await rechterarm_draai(-180)
@@ -21,8 +31,8 @@ async def missie_roodA_start():
     await links(45)
     await vooruit(50)
     await multitask(achteruit(20),rechterarm_draai(90))     # weeegschaal loslaten
-    await links(10  )
-    await vooruit(7000)
+    await links(10)
+    await vooruit(7000)  
 
 
   # Dit is voorbeeldcode voor de start van een nieuw
