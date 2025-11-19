@@ -1,7 +1,6 @@
 from functies import *
 from missie_blauw import missie_blauw_start
 from missie_groenA import missie_groenA_start
-from missie_groenB import missie_groenB_start
 from missie_geelA import missie_geelA_start
 from missie_geelB import missie_geelB_start
 from missie_roodA import missie_roodA_start
@@ -21,17 +20,12 @@ while True:
     if color == Color.GREEN: 
         hub.light.blink(color,[500,500])
         selected = hub_menu("A", "B")  
+       
         if selected == "A":
-             hub.light.on(color)
-             run_task(missie_groenA_start())
-             hub.light.off()
-             hub.display.off()
-        if selected == "B":
             hub.light.on(color)
-            run_task(missie_groenB_start())
+            run_task(missie_groenA_start())
             hub.light.off()
             hub.display.off()
-              
         
     if color == Color.BLUE:
         hub.light.blink(color,[500,500])
