@@ -23,7 +23,7 @@ while True:
     if color == laatste_kleur or color == Color.NONE:
         continue
     laatste_kleur = color    
-    if color == Color.GREEN: 
+    if sensor.reflection() in groen:
         hub.light.blink(color,[500,500])
         selected = hub_menu("A")  
        
@@ -33,16 +33,16 @@ while True:
             hub.light.off()
             hub.display.off()
         
-    if color == Color.BLUE:
+    if sensor.reflection() in blauw:
         hub.light.blink(color,[500,500])
-        selected = hub_menu("A", "B")  
+        selected = hub_menu("A")  
         if selected == "A":
              hub.light.on(color)
              run_task(missie_blauw_start())
              hub.light.off()
              hub.display.off()
 
-    if color == Color.YELLOW:
+    if sensor.reflection() in geel:
         hub.light.blink(color,[500,500])
         selected = hub_menu("A", "B")  
         if selected == "A":
@@ -56,7 +56,7 @@ while True:
              hub.light.off()
              hub.display.off()
     
-    if color == Color.RED:
+    if sensor.reflection() in orange:
         hub.light.blink(color,[500,500])
         selected = hub_menu("A", "B")  
         if selected == "A":
