@@ -25,7 +25,7 @@ while True:
     laatste_kleur = color    
     if color == Color.GREEN: 
         hub.light.blink(color,[500,500])
-        selected = hub_menu("A", "B")  
+        selected = hub_menu("A")  
        
         if selected == "A":
             hub.light.on(color)
