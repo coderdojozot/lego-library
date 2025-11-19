@@ -4,16 +4,20 @@ linkerarm_gears = [30, 10]
 rechterarm_gears = [30, 10]
 # [molen steen]
 # dit is voor missie [] 
-# Rechter startveld, eerste zwarte streepje van links
+# Rechter startveld, eerste kleine streepje van links 
 
 async def missie_oranje_start():
 
   
 
   await multitask(vooruit(770), rechterarm_draai(-1000))
-  await rechts(40)
-  await rechterarm_draai(925)
-  await multitask(vooruit(50), rechterarm_draai(-150))
+  await rechts(43)
+  await rechterarm_draai(950)
+  await vooruit(50) 
+  await rechterarm_draai(-1200)
+  await links(93)
+  #await links(43)
+  #await achteruit(770)
   # Dit is voorbeeldcode voor de start van een nieuw
   # programma. Pas deze code aan voor jouw extensie.
   

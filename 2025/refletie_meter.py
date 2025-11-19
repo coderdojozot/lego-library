@@ -7,4 +7,5 @@ sensor = ColorSensor(Port.A)
 while True:
     value = sensor.reflection()
     print(value)
-    wait(200)
+        wait(200)
+        
