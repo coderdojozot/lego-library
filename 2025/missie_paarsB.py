@@ -21,8 +21,7 @@ async def missie_paarsB_start():
      await vooruit(260)
      await links(45)
      await vooruit(200)
-     await multitask(linkerarm.run_angle(1000,-168),rechterarm.run_angle(1000,-168))
-     await waitvoor(5)
+     await multitask(linkerarm.run_angle(1000,-168),rechterarm.run_angle(1000,-168)
      await multitask(linkerarm.run_angle(1000,168),rechterarm.run_angle(1000,168)) 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
