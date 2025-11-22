@@ -3,7 +3,7 @@ from functies import *
 # [naam]
 # dit is voor missie [] 
 
-async def missie_[kleur_invullen]_start():
+async def missie_[groenB]_start():
   # Dit is voorbeeldcode voor de start van een nieuw
   # programma. Pas deze code aan voor jouw extensie.
   
@@ -16,4 +16,4 @@ async def missie_[kleur_invullen]_start():
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
-    run_task(missie_[kleur invullen]_start())
+    run_task(missie_[groenB]_start())
