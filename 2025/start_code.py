@@ -1,7 +1,5 @@
 from functies import *
 
-linkerarm_gears = [30, 10]
-rechterarm_gears = [30, 10]
 # [naam]
 # dit is voor missie [] 
 
