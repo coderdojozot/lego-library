@@ -1,9 +1,24 @@
 from functies import *
 
-# [naam]
-# dit is voor missie [] 
+# [Ik, snorremans, en über-snor supreme]
+# dit is voor missie [02,04,(14)] 
 
-async def missie_[groenB]_start():
+async def linkerarm_draai_louche(hoek_ongeveer):
+  gemeten_afwijking = -0.2
+  percentage_volgens_doos = gemeten_afwijking / ( (2 * 3.1415 * 2 ) / (360 / hoek_ongeveer))
+  print("De afwijking is: " + str(gemeten_afwijking) )  
+  print("Dat is: " + str(gemeten_afwijking) + "% van wat we wouden.")
+  hoek_correctie = hoek_ongeveer * (( 100 - percentage_volgens_doos ) / 100 )
+  print("Dus de gecorrigeerde hoek is: " + str(hoek_correctie))  
+  await linkerarm_draai(hoek_correctie)
+
+async def missie_groenB_start():
+    await vooruit(170) 
+    await linkerarm_draai_louche(-180)
+    wait(50)
+    await vooruit(-170)
+
+
   # Dit is voorbeeldcode voor de start van een nieuw
   # programma. Pas deze code aan voor jouw extensie.
   
@@ -16,4 +31,4 @@ async def missie_[groenB]_start():
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
-    run_task(missie_[groenB]_start())
+    run_task(missie_groenB_start())
