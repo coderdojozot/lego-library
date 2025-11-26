@@ -1,7 +1,17 @@
 from functies import *
 
-# Simon - Arthur - Lennert
-# dit is voor missie 11 - enkel terugrijden nog
+"""
+---------------
+BOUWERS: Simon - Arthur - Lennert
+MISSIE(S): 11 (kraan)
+PUNTEN: 20 + 10
+STARTPOSITIE: Linker startveld, Rechts 2de zwarte streepje, rechterkant robot
+
+STATUS: rijd nog niet terug, combineren met blauwA
+TESTDATUM/ROBOT: 26/11/2025 - hub1
+---------------
+"""
+
 async def missie_geelB_start():
     await draai_rechts_met_straal(90,300)
     await vooruit(578)

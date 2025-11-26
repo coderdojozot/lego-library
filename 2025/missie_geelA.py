@@ -1,5 +1,16 @@
 from functies import *
 
+"""
+---------------
+BOUWERS: Luca
+MISSIE(S): 3 (mijnkarretje) - 9 (winkel met dak) - 10 (weegschaal)
+PUNTEN: 30, 20, 20
+STARTPOSITIE: Linker startveld, 2de linkse zwarte streepje, linkerkant robot
+
+STATUS: werkt volledig
+TESTDATUM/ROBOT: 26/11/2025 - hub1
+---------------
+"""
 # Luca
 # dit is voor missie 3, 9, 10 
 # startveld link, 2de zwart streepje van links

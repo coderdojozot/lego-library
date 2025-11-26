@@ -1,7 +1,17 @@
 from functies import *
 
-# Arthur
-# dit is voor missie 12 -- werkt volledig
+"""
+---------------
+BOUWER(S): Arthur
+MISSIE(S): 12 (boot met zand)
+PUNTEN: 20 + 10
+STARTPOSITIE: Linker startveld, Rechts zwarte streepje, voorkant robot
+
+STATUS: werkt volledig
+TESTDATUM/ROBOT: 26/11/2025 - hub1
+---------------
+"""
+
 async def missie_blauwA_start():
     await vooruit(300)
     await rechterarm.run_angle(600, -182)

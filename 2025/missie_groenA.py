@@ -1,7 +1,16 @@
 from functies import *
 
-# Lennert - Lucas
-# dit is voor missie 1 en 14 --> 14 werkt nog niet helemaal
+"""
+---------------
+BOUWERS: Lennert - Lucas
+MISSIE(S): 1 (surface brussing)- 6 (rotsblokken) - 14 (borstel) - 5 (schuine vloer)
+PUNTEN: 10 + 10 , 10, 5, 30
+STARTPOSITIE: Linker startveld, 2de linkse zwarte streepje, linkerkant robot
+
+STATUS: werkt volledig
+TESTDATUM/ROBOT: 26/11/2025 - hub1
+---------------
+"""
 async def missie_groenA_start():
     await rechterarm_draai(50)
     await vooruit(700,1000,500)

@@ -15,6 +15,18 @@ from pybricks.tools import wait
 ##  NIKS AAN HET HOOFDPROGRAMMA VERANDEREN ZONDER OVERLEG MET IEDEREEN  ##
 ##########################################################################
 
+"""
+---------------
+CODE: Lucas - Lennert
+
+Dit is het hoofdprogramma dat de missies aanroept op basis van de gedetecteerde kleur.
+Elke kleur heeft twee missies (A en B), die geselecteerd kunnen worden via het hub-menu.
+
+STATUS: werkt volledig
+TESTDATUM/ROBOT: 26/11/2025 - hub1
+---------------
+"""
+
 laatste_kleur = Color.MAGENTA
 color =sensor.color()
 print(color)
