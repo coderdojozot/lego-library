@@ -2,7 +2,7 @@ from functies import *
 
 # Arthur
 # dit is voor missie 12 -- werkt volledig
-async def missie_blauw_start():
+async def missie_blauwA_start():
     await vooruit(300)
     await rechterarm.run_angle(600, -182)
     await achteruit(50)
@@ -14,4 +14,4 @@ async def missie_blauw_start():
     await achteruit(750)
 
 if __name__ == "__main__":
-    run_task(missie_blauw_start())
+    run_task(missie_blauwA_start())

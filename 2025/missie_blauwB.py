@@ -6,7 +6,7 @@ rechterarm_gears = [30, 10]
 # dit is voor missie [] 
 # Rechter startveld, eerste kleine streepje van links 
 
-async def missie_oranje_start():
+async def missie_blauwB_start():
 
   
 
@@ -30,4 +30,4 @@ async def missie_oranje_start():
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
-    run_task(missie_oranje_start())
+    run_task(missie_blauwB_start())

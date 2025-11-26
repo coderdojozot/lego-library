@@ -5,11 +5,11 @@ from functies import *
 # startlocatie: rechter startzone, streepje 3.1 van rechts
 
 
-async def missie_paarsA_start():     
+async def missie_roodA_start():     
 
     
            # molen ARM
-    await multitask(vvooruit(770),linkerarm_draai(-1000))
+    await multitask(vooruit(770),linkerarm_draai(-1000))
     await rechts (50)
     await linkerarm(950)
     await vooruit(50)
@@ -47,4 +47,4 @@ async def missie_paarsA_start():
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
-    run_task(missie_paarsA_start())
+    run_task(missie_roodA_start())
