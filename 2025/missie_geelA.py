@@ -11,9 +11,7 @@ STATUS: werkt volledig
 TESTDATUM/ROBOT: 26/11/2025 - hub1
 ---------------
 """
-# Luca
-# dit is voor missie 3, 9, 10 
-# startveld link, 2de zwart streepje van links
+
 async def missie_geelA_start():
    await vooruit(735)
    await rechts(85)
@@ -36,8 +34,6 @@ async def missie_geelA_start():
    await rechts(45)
    await multitask(rechterarm.run_angle(900,150),vooruit(450))
    
-
-
 # laat dit zeker staan!
 if __name__ == "__main__":
     run_task(missie_geelA_start())
