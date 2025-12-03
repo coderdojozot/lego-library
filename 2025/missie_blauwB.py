@@ -8,7 +8,7 @@ PUNTEN: 30
 STARTPOSITIE: Rechter startveld, Links zwarte kleine streepje, linkerkant robot
 
 STATUS: nog te testen
-TESTDATUM/ROBOT: 26/11/2025 - hub1
+TESTDATUM/ROBOT: 3/12/2025 - hub1
 ---------------
 """
 
