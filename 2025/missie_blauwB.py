@@ -5,11 +5,14 @@ from functies import *
 BOUWER(S): Arthus - Robi
 MISSIE(S): 7 (molensteen)
 PUNTEN: 30
-STARTPOSITIE: Rechter startveld, Links zwarte kleine streepje, linkerkant robot
-staaf omhoog!
+
+STARTVELD: RECHTS
+STARTPOSITIE: Links zwarte kleine streepje, linkerkant robot
+OPGELET: staaf volledig omhoog!
 
 STATUS: werkt nog niet volledig
 TESTDATUM/ROBOT: 20/12/2025 - hub2
+BATTERIJ % BIJ START: xxx
 ---------------
 """
 
@@ -29,5 +32,8 @@ async def missie_blauwB_start():
   wait(1000)
   await links(90)
   await vooruit(2000)
+
+# Deze regel zorgt ervoor dat de code uitgevoerd wordt
+# verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
     run_task(missie_blauwB_start())

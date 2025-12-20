@@ -5,10 +5,13 @@ from functies import *
 BOUWERS: Lennert - Lucas
 MISSIE(S): 1 (surface brussing)- 6 (rotsblokken) - 14 (borstel) - 5 (schuine vloer)
 PUNTEN: 10 + 10 , 10, 5, 30
-STARTPOSITIE: Linker startveld, 2de linkse zwarte streepje, linkerkant robot
 
-STATUS: werkt volledig
-TESTDATUM/ROBOT: 26/11/2025 - hub1
+STARTVELD: LINKS
+STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
+
+STATUS: werkte volledig, nog eens te hertesten met volle batterij
+TESTDATUM/ROBOT: 20/12/2025 - hub1
+BATTERIJ % BIJ START: xxx
 ---------------
 """
 async def missie_groenA_start():
@@ -50,5 +53,7 @@ async def missie_groenA_start():
     # await vooruit(100)
     # await links(90)
    
+# Deze regel zorgt ervoor dat de code uitgevoerd wordt
+# verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
     run_task(missie_groenA_start())

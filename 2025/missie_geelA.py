@@ -5,10 +5,13 @@ from functies import *
 BOUWERS: Luca
 MISSIE(S): 3 (mijnkarretje) - 9 (winkel met dak) - 10 (weegschaal)
 PUNTEN: 30, 20, 20
-STARTPOSITIE: Linker startveld, 2de linkse zwarte streepje, linkerkant robot
+
+STARTVELD: LINKS
+STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 
 STATUS: werkt volledig
 TESTDATUM/ROBOT: 26/11/2025 - hub1
+BATTERIJ % BIJ START: xxx
 ---------------
 """
 
@@ -34,6 +37,8 @@ async def missie_geelA_start():
    await rechts(45)
    await multitask(rechterarm.run_angle(900,150),vooruit(450))
    
-# laat dit zeker staan!
+   
+# Deze regel zorgt ervoor dat de code uitgevoerd wordt
+# verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
     run_task(missie_geelA_start())

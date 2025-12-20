@@ -5,10 +5,13 @@ from functies import *
 BOUWER(S): Arthur
 MISSIE(S): 12 (boot met zand)
 PUNTEN: 20 + 10
-STARTPOSITIE: Linker startveld, Rechts zwarte streepje, voorkant robot
+
+STARTVELD: LINKS
+STARTPOSITIE: Rechts zwarte streepje, voorkant robot
 
 STATUS: werkt volledig
-TESTDATUM/ROBOT: 26/11/2025 - hub1
+LAATSTE TESTDATUM/ROBOT: 20/12/2025 - hub1
+BATTERIJ % BIJ START: xxx
 ---------------
 """
 
@@ -23,5 +26,7 @@ async def missie_blauwA_start():
     await vooruit(250)
     await achteruit(750)
 
+# Deze regel zorgt ervoor dat de code uitgevoerd wordt
+# verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
     run_task(missie_blauwA_start())
