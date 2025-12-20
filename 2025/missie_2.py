@@ -14,18 +14,18 @@ TESTDATUM/ROBOT: 3/12/2025 - hub2
 
 async def missie_lichtblauw_start():
     await achteruit(10)
-    await vooruit(780)
-    await links(41)
-    await vooruit(150)
-    await rechterarm_draai(40)
-    await achteruit(200)
-    await rechts(30)
-    await rechterarm_draai(-20)
-    await rechts(110, 1000)
-    await rechts(20, 400)
-    await rechterarm_draai(-20)
-    await achteruit(100)
+    await vooruit(770)
+    await links(43)
+    await vooruit(160)
     await rechterarm_draai(50)
+    await achteruit(200)
+    #await rechts(30)
+    #await multitask(rechterarm_draai(-50),rechts(110, 1000))
+    #await rechts(110, 1000)
+    #await rechts(20, 400)
+    #await rechterarm_draai(-20)
+    #await achteruit(100)
+    #await rechterarm_draai(50)
 
 
 

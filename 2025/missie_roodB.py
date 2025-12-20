@@ -7,7 +7,7 @@ MISSIE(S): 8 (silo muur) - 13 (dino standbeeld)
 PUNTEN: 10x3, 30
 STARTPOSITIE: Rechter startveld, 2de rechtse zwarte streepje, rechterkant robot
 
-STATUS: code voor standbeeld nog aanpassen
+STATUS: code voor standbeeld nog aanpassen (slaat niet hard genoeg)
 TESTDATUM/ROBOT: 26/11/2025 - hub1
 ---------------
 """
