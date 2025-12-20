@@ -9,7 +9,7 @@ STARTPOSITIE: Rechter startveld, Links zwarte kleine streepje, linkerkant robot
 staaf omhoog!
 
 STATUS: werkt nog niet volledig
-TESTDATUM/ROBOT: 20/12/2025 - hub1
+TESTDATUM/ROBOT: 20/12/2025 - hub2
 ---------------
 """
 
