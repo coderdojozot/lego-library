@@ -14,14 +14,15 @@ TESTDATUM/ROBOT: 26/11/2025 - hub1
 
 async def missie_geelB_start():
     await draai_rechts_met_straal(90,300)
-    await vooruit(598)
+    await vooruit(608)
     await rechts(90)
     await vooruit(150)
     await links(20)
     await rechterarm_draai(2400)
-    await achteruit(300)
+    await achteruit(274)
     await rechts(110)
-    await vooruit(800)
+    await vooruit(600)
+    await draai_links_met_straal(90,300)
 
 if __name__ == "__main__": 
     run_task(missie_geelB_start())
