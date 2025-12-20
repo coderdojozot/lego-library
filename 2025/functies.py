@@ -46,11 +46,11 @@ async def links(hoek, snelheid = STANDAARD_WAGEN_DRAAISNELHEID):
     drivebase.settings(turn_rate = snelheid)
     await drivebase.turn(-hoek)
 
-async def rechterarm_draai(hoek):
-    await rechterarm.run_angle(STANDAARD_ARM_DRAAISNELHEID, hoek)
+async def rechterarm_draai(hoek, snelheid = STANDAARD_ARM_DRAAISNELHEID):
+    await rechterarm.run_angle(snelheid, hoek)
 
-async def linkerarm_draai(hoek):
-    await linkerarm.run_angle(STANDAARD_ARM_DRAAISNELHEID, hoek)
+async def linkerarm_draai(hoek, snelheid = STANDAARD_ARM_DRAAISNELHEID):
+    await linkerarm.run_angle(snelheid, hoek)
             
 async def draai_rechts_met_straal(hoek, straal, snelheid = STANDAARD_WAGEN_DRAAISNELHEID):
     drivebase.settings(turn_rate = snelheid)
