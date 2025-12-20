@@ -8,7 +8,7 @@ PUNTEN: 30
 STARTPOSITIE: Rechter startveld, Links zwarte kleine streepje, linkerkant robot
 
 STATUS: nog te testen
-TESTDATUM/ROBOT: 26/11/2025 - hub1
+TESTDATUM/ROBOT: 3/12/2025 - hub1
 ---------------
 """
 
@@ -17,11 +17,12 @@ rechterarm_gears = [30, 10]
 
 async def missie_blauwB_start():
 
-  await multitask(vooruit(770), rechterarm_draai(-1000))
-  await rechts(43)
-  await rechterarm_draai(950)
-  await vooruit(50) 
-  await rechterarm_draai(-1200)
+  await multitask(vooruit(750),linkerarm_draai(1500))
+  await rechts(45)
+  await achteruit(25)
+  await linkerarm_draai(500)
+  await vooruit(65) 
+  await linkerarm_draai(-1200)
   await links(93)
 
 if __name__ == "__main__":

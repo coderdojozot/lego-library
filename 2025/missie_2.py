@@ -7,13 +7,26 @@ BOUWER(S): Nathan
 MISSIE(S): 3 (Map Reveal)
 PUNTEN: 10
 STARTPOSITIE: Linker startveld, derde dikke zwarte streepje van links)
-STATUS: bezig
+STATUS: naar huis linkse kant
 TESTDATUM/ROBOT: 3/12/2025 - hub2
 ---------------
 """
 
 async def missie_lichtblauw_start():
-    await vooruit(800)
+    await achteruit(10)
+    await vooruit(780)
+    await links(41)
+    await vooruit(150)
+    await rechterarm_draai(40)
+    await achteruit(200)
+    await rechts(30)
+    await rechterarm_draai(-20)
+    await rechts(110, 1000)
+    await rechts(20, 400)
+    await rechterarm_draai(-20)
+    await achteruit(100)
+    await rechterarm_draai(50)
+
 
 
   # Dit is voorbeeldcode voor de start van een nieuw
