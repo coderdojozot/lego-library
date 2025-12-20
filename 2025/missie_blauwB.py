@@ -6,9 +6,10 @@ BOUWER(S): Arthus - Robi
 MISSIE(S): 7 (molensteen)
 PUNTEN: 30
 STARTPOSITIE: Rechter startveld, Links zwarte kleine streepje, linkerkant robot
+staaf omhoog!
 
-STATUS: nog te testen
-TESTDATUM/ROBOT: 3/12/2025 - hub1
+STATUS: werkt nog niet volledig
+TESTDATUM/ROBOT: 20/12/2025 - hub1
 ---------------
 """
 
