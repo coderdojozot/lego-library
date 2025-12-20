@@ -18,12 +18,13 @@ rechterarm_gears = [30, 10]
 async def missie_blauwB_start():
 
   await multitask(vooruit(750),linkerarm_draai(1500))
-  await rechts(45)
+  await rechterarm_draai(270)
+  await rechts(51)
   await achteruit(25)
-  await linkerarm_draai(500)
+  await linkerarm_draai(450)
   await vooruit(65) 
   await linkerarm_draai(-1200)
-  await links(93)
+  await links(150)
 
 if __name__ == "__main__":
     run_task(missie_blauwB_start())
