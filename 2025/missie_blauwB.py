@@ -21,18 +21,30 @@ rechterarm_gears = [30, 10]
 
 async def missie_blauwB_start():
 
-  await multitask(vooruit(750),linkerarm_draai(1500))
-  await rechterarm_draai(270)
+ # await multitask(vooruit(750),linkerarm_draai(1500))
+  await vooruit(440)
+  await multitask(linkerarm.run_angle(1000,-200),rechterarm.run_angle(1000,-200))  #tandwielenc uit silo 
+  await multitask(linkerarm.run_angle(1000,200),rechterarm.run_angle(1000,200))
+  await multitask(linkerarm.run_angle(1000,-200),rechterarm.run_angle(1000,-200))
+  await multitask(linkerarm.run_angle(1000,200),rechterarm.run_angle(1000,200))
+  await multitask(linkerarm.run_angle(1000,-200),rechterarm.run_angle(1000,-200))
+  await multitask(linkerarm.run_angle(1000,200),rechterarm.run_angle(1000,200))
+  await links(90)
+  await vooruit(70)
+  await rechts(90)
+  await vooruit(350)
   await rechts(53)
-  await achteruit(25)
-  await linkerarm_draai(455)
-  await vooruit(65) 
-  await linkerarm_draai(-1200)
+  await achteruit(150)
+  await linkerarm_draai(950)
+  await achteruit(15)
+  await vooruit(70)
+  await linkerarm(-1200)
   await links(45, snelheid=500)
   await links(100, snelheid=1000)
   wait(1000)
   await links(90)
   await vooruit(450)
+  await linkerarm_draai(-1000)
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
