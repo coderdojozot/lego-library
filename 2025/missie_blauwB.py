@@ -8,11 +8,11 @@ PUNTEN: 30
 
 STARTVELD: RECHTS
 STARTPOSITIE: Links zwarte kleine streepje, linkerkant robot
-OPGELET: staaf volledig omhoog!
+OPGELET: staaf volledig omhoog! --> makkelijkst als je dat op voorhand doet
 
-STATUS: werkt nog niet volledig
-TESTDATUM/ROBOT: 20/12/2025 - hub2
-BATTERIJ % BIJ START: xxx
+STATUS: werkt nog niet volledig (wordt te ver gegooid door de arm)
+TESTDATUM/ROBOT: 14/01/2026 - hub1
+BATTERIJ % BIJ START: 96,39%
 ---------------
 """
 
@@ -28,10 +28,11 @@ async def missie_blauwB_start():
   await linkerarm_draai(455)
   await vooruit(65) 
   await linkerarm_draai(-1200)
-  await links(150)
+  await links(45, snelheid=500)
+  await links(100, snelheid=1000)
   wait(1000)
   await links(90)
-  await vooruit(2000)
+  await vooruit(450)
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is

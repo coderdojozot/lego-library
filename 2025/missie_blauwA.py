@@ -10,8 +10,8 @@ STARTVELD: LINKS
 STARTPOSITIE: Rechts zwarte streepje, voorkant robot
 
 STATUS: werkt volledig
-LAATSTE TESTDATUM/ROBOT: 20/12/2025 - hub1
-BATTERIJ % BIJ START: xxx
+LAATSTE TESTDATUM/ROBOT: (14/01/2026 - hub1)
+BATTERIJ % BIJ START: 97,17%
 ---------------
 """
 
@@ -21,6 +21,7 @@ async def missie_blauwA_start():
     await achteruit(50)
     await rechterarm.run_angle(600, 180)
     await links(90)
+    await achteruit(30)
     await vooruit(200)
     await rechts(90)
     await vooruit(250)

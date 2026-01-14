@@ -9,9 +9,9 @@ PUNTEN: 10 + 10 , 10, 5, 30
 STARTVELD: LINKS
 STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 
-STATUS: werkte volledig, nog eens te hertesten met volle batterij
-TESTDATUM/ROBOT: 20/12/2025 - hub1
-BATTERIJ % BIJ START: xxx
+STATUS: werkte volledig
+TESTDATUM/ROBOT: (14/01/2026 - hub1)
+BATTERIJ % BIJ START: 97,63%
 ---------------
 """
 async def missie_groenA_start():
@@ -34,7 +34,7 @@ async def missie_groenA_start():
     await multitask(links(10), rechterarm_draai(20))
     await multitask(rechts(10), rechterarm_draai(-20))
     await rechterarm_draai(50)
-    await achteruit(110)
+    await achteruit(80)
     await linkerarm_draai(-135)
     await links(45)
     await achteruit(200)
@@ -42,7 +42,7 @@ async def missie_groenA_start():
     await vooruit(1340,800,400)
     await multitask(rechterarm_draai(50),linkerarm_draai(49))
     await links(55)
-    await achteruit(125)
+    await achteruit(140)
     await rechts(10)
     await linkerarm_draai(140)
     await vooruit(175)
