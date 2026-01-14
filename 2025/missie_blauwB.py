@@ -3,8 +3,8 @@ from functies import *
 """
 ---------------
 BOUWER(S): Arthus - Robi
-MISSIE(S): 7 (molensteen)
-PUNTEN: 30
+MISSIE(S): 7 (molensteen) - 8 (silo muur)
+PUNTEN: 30, 10x3
 
 STARTVELD: RECHTS
 STARTPOSITIE: Links zwarte kleine streepje, linkerkant robot
@@ -13,6 +13,7 @@ OPGELET: staaf volledig omhoog! --> makkelijkst als je dat op voorhand doet
 STATUS: werkt nog niet volledig (wordt te ver gegooid door de arm)
 TESTDATUM/ROBOT: 14/01/2026 - hub1
 BATTERIJ % BIJ START: 96,39%
+
 ---------------
 """
 

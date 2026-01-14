@@ -2,14 +2,14 @@ from functies import *
 
 """
 ---------------
-BOUWER(S): Arthur
-MISSIE(S): 12 (boot met zand)
-PUNTEN: 20 + 10
+BOUWER(S):  Simon - Arthur - Lennert
+MISSIE(S): 12 (boot met zand) + 11 (kraan)
+PUNTEN: 20 + 10 + 20 + 10
 
 STARTVELD: LINKS
 STARTPOSITIE: Rechts zwarte streepje, voorkant robot
 
-STATUS: werkt volledig
+STATUS: deel 2 werkt nog niet volledig
 LAATSTE TESTDATUM/ROBOT: (14/01/2026 - hub1)
 BATTERIJ % BIJ START: 97,17%
 ---------------
@@ -22,10 +22,23 @@ async def missie_blauwA_start():
     await rechterarm.run_angle(600, 180)
     await links(90)
     await achteruit(30)
-    await vooruit(200)
+    await vooruit(215)
     await rechts(90)
     await vooruit(250)
-    await achteruit(750)
+    await achteruit(250)
+    await links(90)
+    await vooruit(100)  
+    await rechts(90)
+    await vooruit(475)
+    await rechts(90)
+    await vooruit(140)
+    await links(20)
+    await linkerarm.run_angle(600, 800)
+    await rechts(20)
+    await achteruit(50)
+    await links(135)
+    await vooruit(200)
+    
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is

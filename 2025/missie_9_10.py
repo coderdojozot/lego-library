@@ -2,14 +2,14 @@ from functies import *
 
 """
 ---------------
-BOUWERS: Arthus
+BOUWERS: 
 MISSIE(S): 9 - 10
 PUNTEN: 
 
 STARTVELD: RECHTS
 STARTPOSITIE: streepje 3.1 van rechts, rechterkant robot
 
-STATUS: Deze missie zal gecombineerd worden met Blauw B - Hier bestaat geen stuk meer voor!!!
+STATUS: Deze missie kan gecombineerd worden met Blauw A - Hier bestaat geen stuk meer voor!!!
 TESTDATUM/ROBOT: 
 BATTERIJ % BIJ START: xxx
 ---------------
