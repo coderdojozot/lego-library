@@ -34,17 +34,17 @@ async def missie_blauwB_start():
   await rechts(90)
   await vooruit(350)
   await rechts(53)
-  await achteruit(150)
-  await linkerarm_draai(950)
+  await achteruit(120)
+  await linkerarm_draai(1850)
   await achteruit(15)
-  await vooruit(70)
-  await linkerarm(-1200)
+  await vooruit(80)
+  await linkerarm_draai(-1200)
   await links(45, snelheid=500)
   await links(100, snelheid=1000)
   wait(1000)
   await links(90)
   await vooruit(450)
-  await linkerarm_draai(-1000)
+  await linkerarm_draai(-200)
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
