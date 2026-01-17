@@ -45,6 +45,19 @@ async def missie_blauwB_start():
   await vooruit(45)
   await linkerarm_draai(1500)
   await achteruit(50)
+  await rechts(15)  #molensteen lossen
+  await achteruit(35)
+  await linkerarm_draai(-1300)
+  await achteruit(35)
+  await vooruit(32.5)
+  await rechts(20)
+  await vooruit(600)
+  await links(50)
+  await vooruit(50)
+  await rechts(15)
+  await vooruit(50)
+  await links(10)
+  await vooruit(1000)
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
