@@ -2,7 +2,7 @@ from functies import *
 
 """
 ---------------
-BOUWERS: Luca
+BOUWERS: Luca, Nielspookie
 MISSIE(S): 3 (mijnkarretje) - 9 (winkel met dak) - 10 (weegschaal)
 PUNTEN: 30, 20, 20
 
@@ -10,7 +10,7 @@ STARTVELD: LINKS
 STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 
 STATUS: werkt volledig
-TESTDATUM/ROBOT: 26/11/2025 - hub1
+TESTDATUM/ROBOT: 26/11/2025 - hub2
 BATTERIJ % BIJ START: 99.01%
 ---------------
 """
@@ -28,7 +28,7 @@ async def missie_geelA_start():
    await rechterarm.run_angle(900,1695)                         
    await achteruit(26)                                      # Weegschaal omlaag
    await multitask(rechterarm.run_angle(900,-250),links(33.35))   # Arm omhoog
-   await vooruit(228, 900)                                      # Omhoogduwen winkelding
+   await vooruit(229.65, 900)                                      # Omhoogduwen winkelding
    await wait(10)
    await achteruit(220)
    await links(18)

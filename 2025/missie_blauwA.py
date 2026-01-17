@@ -22,7 +22,7 @@ async def missie_blauwA_start():
     await rechterarm.run_angle(600, 180)
     await links(90)
     await achteruit(30)
-    await vooruit(215)
+    await vooruit(200)
     await rechts(90)
     await vooruit(250)
     await achteruit(250)
@@ -33,11 +33,13 @@ async def missie_blauwA_start():
     await rechts(90)
     await vooruit(100)
     await links(15)
-    await linkerarm.run_angle(600, 800)
+    await linkerarm.run_angle(600, -1200)
     await rechts(20)
     await achteruit(50)
-    await links(135)
-    await vooruit(200)
+    await links(90)
+    await vooruit(900)
+    #await links(135)
+    #await vooruit(200)
     
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
