@@ -10,7 +10,7 @@ STARTVELD: LINKS
 STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 
 STATUS: werkte volledig
-TESTDATUM/ROBOT: (14/01/2026 - hub1)
+TESTDATUM/ROBOT: 14/01/2026 - hub1
 BATTERIJ % BIJ START: 97,63%
 ---------------
 """

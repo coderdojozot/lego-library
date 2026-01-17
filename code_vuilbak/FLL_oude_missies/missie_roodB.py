@@ -35,5 +35,5 @@ async def missie_roodB_start():
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
 # verander enkel de naam van jouw missie, maar laat de code verder zoals ze is
 if __name__ == "__main__":
-    run_task(missie_r
+    run_task(missie_roodB_start())
     
