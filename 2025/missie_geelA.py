@@ -23,11 +23,11 @@ async def missie_geelA_start():
    await multitask(vooruit(1.85),rechterarm.run_angle(900,-2000))    # Heffen mijnkarretje
    await multitask(vooruit(2),rechts(70))
    await vooruit(625)  # Arm omhoog
-   await rechts(89)
+   await rechts(91)
    await vooruit(50)
    await rechterarm.run_angle(900,1695)                         
    await achteruit(26)                                      # Weegschaal omlaag
-   await multitask(rechterarm.run_angle(900,-250),links(31.35))   # Arm omhoog
+   await multitask(rechterarm.run_angle(900,-250),links(33.35))   # Arm omhoog
    await vooruit(228, 900)                                      # Omhoogduwen winkelding
    await wait(10)
    await achteruit(220)
