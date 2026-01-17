@@ -44,7 +44,7 @@ async def missie_blauwB_start():
   await links(100, snelheid=1000)
   wait(1000)
   await links(90)
-  await vooruit(450)
+  await vooruit(470)
   await linkerarm_draai(-200)
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
