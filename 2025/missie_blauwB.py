@@ -54,7 +54,7 @@ async def missie_blauwB_start():
   await vooruit(600)
   await links(50)
   await vooruit(50)
-  await rechts(15)
+  await rechts(30)
   await vooruit(50)
   await links(10)
   await vooruit(1000)
