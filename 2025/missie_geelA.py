@@ -8,10 +8,11 @@ PUNTEN: 30, 20, 20
 
 STARTVELD: LINKS
 STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
+ARM?
 
-STATUS: werkt volledig
-TESTDATUM/ROBOT: 26/11/2025 - hub2
-BATTERIJ % BIJ START: 99.01%
+STATUS: laatste missie twee keer doen om zeker te zijn
+TESTDATUM/ROBOT: 21/01/2026 - hub1
+BATTERIJ % BIJ START: 89%
 ---------------
 """
 

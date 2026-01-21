@@ -9,9 +9,9 @@ PUNTEN: 10 + 10 , 10, 5, 30
 STARTVELD: LINKS
 STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 
-STATUS: werkte volledig
-TESTDATUM/ROBOT: 14/01/2026 - hub1
-BATTERIJ % BIJ START: 97,63%
+STATUS: laatste missie nog checken
+TESTDATUM/ROBOT: 21/01/2026 - hub1
+BATTERIJ % BIJ START: 98,63%
 ---------------
 """
 async def missie_groenA_start():

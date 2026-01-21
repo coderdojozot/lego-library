@@ -9,9 +9,9 @@ PUNTEN: 20 + 10 + 20 + 10
 STARTVELD: LINKS
 STARTPOSITIE: Rechts zwarte streepje, voorkant robot
 
-STATUS: deel 2 werkt nog niet volledig
-LAATSTE TESTDATUM/ROBOT: (14/01/2026 - hub1)
-BATTERIJ % BIJ START: 97,17%
+STATUS: deel 2 werkt nog niet volledig + nog twee extra missies toevoegen
+LAATSTE TESTDATUM/ROBOT: (21/01/2026 - hub1)
+BATTERIJ % BIJ START: 89,17%
 ---------------
 """
 
