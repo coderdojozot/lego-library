@@ -28,8 +28,8 @@ async def missie_geelA_start():
    await rechts(91)
    await vooruit(29.99)
    await rechterarm.run_angle(900,1695)                         
-   await achteruit(40.75)                                      # Weegschaal omlaag
-   await multitask(rechterarm.run_angle(900,-250),links(34.10))   # Arm omhoog
+   await achteruit(40.99)                                      # Weegschaal omlaag
+   await multitask(rechterarm.run_angle(900,-250),links(34))   # Arm omhoog
    await vooruit(229.65, 900)                                      # Omhoogduwen winkelding
    await wait(10)
    await achteruit(220)
