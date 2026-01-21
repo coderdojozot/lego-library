@@ -2,7 +2,7 @@ from functies import *
 
 """
 ---------------
-BOUWER(S):  Simon - Arthur - Lennert
+BOUWER(S):  Simon - Arthur - Lennert - Lars
 MISSIE(S): 12 (boot met zand) + 11 (kraan)
 PUNTEN: 20 + 10 + 20 + 10
 
