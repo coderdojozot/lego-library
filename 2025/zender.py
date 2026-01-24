@@ -5,8 +5,9 @@ from pybricks.tools import wait
 
 # Initialize the hub.
 hub = PrimeHub(broadcast_channel=1)
-
+sensor1 = 
 
 bricht = "hallo"
 
-hub.ble.broadcast(bricht)
+while True:
+    hub.ble.broadcast(bricht)
