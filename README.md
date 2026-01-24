@@ -16,8 +16,7 @@ lego-library/
 │   ├── missie_blauwA.py           # Missies voor blauw opzetstuk
 │   ├── missie_groenA.py           # Missies voor groen opzetstuk
 │   ├── batterij_meter.py          # Controle batterijstatus robot
-│   ├── reflectie_meter.py         # Reflectie sensor tools
-│   ├── start_code.py              # Basis startcode
+│   ├── start_code.py              # Basis startcode (van hier kan je een nieuwe missiecode starten)
 │   ├── zender.py                  # Innovatieproject communicatie
 │   └── ontvanger.py               # Innovatieproject communicatie
 ├── code_vuilbak/                  # Oude code en experimentele code
@@ -65,8 +64,11 @@ We gebruiken de **Pybricks extensie voor VS Code** zodat we rechtstreeks vanuit 
 **Setup:**
 1. Installeer de Pybricks extensie in VS Code
 2. Verbind je LEGO hub via Bluetooth
-3. Open een `.py` bestand
-4. Druk op de **Run** knop (▶️) om de code naar de robot te pushen
+3. Open een `.py` bestand.
+4. Connect Device (als je hub aanstaat zou je die nu moeten kunnen selecteren)
+5. Eens geconnecteerd kan je op **Compile and Start Program** duwen om je laatste code op je hub te plaatsen.
+![alt text](image.png)
+
 
 **Voordelen:**
 - Sneller ontwikkelen en testen
@@ -179,7 +181,7 @@ from functies import gyro_rechtdoor, draai_links, draai_rechts
 
 ### Verkeerde missie wordt uitgevoerd
 - Controleer of het juiste kleur opzetstuk gemonteerd is
-- Test de kleurensensor met `reflectie_meter.py`
+- Als je Compile and Start Program doet krijg je de gedetecteerde kleur te zien in de output. 
 - Zorg dat de sensor goed gepositioneerd is
 
 ### Code upload lukt niet
@@ -200,5 +202,3 @@ Zie [LICENSE](LICENSE) voor meer informatie.
 **Veel succes met jullie missies! 🚀🤖**
 
 ---
-
-**Veel succes met jullie missies! 🚀🤖**
