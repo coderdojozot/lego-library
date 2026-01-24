@@ -1,8 +1,10 @@
-# CoderDojo Zottemgem: Lego League Challenge Code
+# CoderDojo Zottegem: First Lego League 2025-2026
 
-> PyBricks libraries and source code for entry in the [Lego League robotics Competition](https://www.firstlegoleague.org/season).
+Ons [FLL](https://www.firstlegoleague.org/season) team van de [Zottegemse CoderDojo](https://zottegem.coderdojobelgium.be) bestaat uit 9 CoderDojo ninja's tussen 9-15 jaar en ook nog twee opkomende talenten. Wij kennen elkaar enkel door het samen programmeren tijdens de maandelijkse CoderDojo zaterdagen. Tussendoor hebben we ook onze woensdagnammiddag vrij gemaakt om onze 3de deelname aan de First Lego League te kunnen voorbereiden.
 
-Herbruikbare stukken code (libraries) voor het [Lego league team](https://www.firstlegoleague.org/season) van de [Zottegemse CoderDojo](https://zottegem.coderdojobelgium.be).
+Na twee jaar meedoen en (twee keer onverwacht) met een beker naar huis komen (Core Values en beste robot ontwerp) legden we dit jaar de lat wat hoger, weg blokjescode, hello python.
+
+Naast het verder perfectioneren van onze robot doken we als echte programmeurs in de wondere wereld van VsCode, Git, Functies,... Python is plots niet langer enkel een slang, maar ook een codeertaal waar we onze robot mee kunnen besturen. 
 
 ## Repository Structuur
 
