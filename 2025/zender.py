@@ -10,3 +10,4 @@ hub = PrimeHub(broadcast_channel=1)
 bricht = "hallo"
 
 hub.ble.broadcast(bricht)
+print("hallo")
