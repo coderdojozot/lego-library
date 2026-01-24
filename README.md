@@ -36,7 +36,9 @@ Onze robot gebruikt een **kleurensensor** om te detecteren welk opzetstuk er op 
 - 🔵 **Blauw** → voert `missie_blauwA.py` uit
 - 🟢 **Groen** → voert `missie_groenA.py` uit
 
-Het **hoofd_programma.py** detecteert de kleur en roept automatisch de juiste missie aan. Dit betekent dat je geen code hoeft aan te passen wanneer je van opzetstuk wisselt!
+Het **hoofd_programma.py** detecteert de kleur en roept automatisch de juiste missie aan. Dit betekent dat je geen code hoeft aan te passen wanneer je van opzetstuk wisselt, enkel 1 maal op de pijltjesknop duwen en starten is voldoende.
+
+Oorspronkelijk hadden we ook opzetstukken en code waarbij je twee maal op de pijltjestoets moest drukken, op B dus, maar door nieuwe inzichten combineerden we een paar van onze extensies waardoor we enkel met de A programma's overbleven.
 
 ### Functies Bibliotheek
 
