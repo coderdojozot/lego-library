@@ -10,9 +10,9 @@ STARTVELD: LINKS
 STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 ARM?
 
-STATUS: laatste missie twee keer doen om zeker te zijn
-TESTDATUM/ROBOT: 21/01/2026 - hub1
-BATTERIJ % BIJ START: 89%
+STATUS: 2de keer laatste missie rijdt nog te ver vooruit
+TESTDATUM/ROBOT: 26/01/2026 - hub1
+BATTERIJ % BIJ START: 91%
 ---------------
 """
 

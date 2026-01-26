@@ -7,12 +7,12 @@ MISSIE(S): 7 (molensteen) - 8 (silo muur)
 PUNTEN: 30, 10x3
 
 STARTVELD: RECHTS
-STARTPOSITIE: Links zwarte kleine streepje, linkerkant robot
+STARTPOSITIE: Links tweede zwarte dikke streep, linkerkant robot
 OPGELET: staaf volledig omhoog! --> makkelijkst als je dat op voorhand doet
 
-STATUS: werkt nog niet volledig om terug te rijden
-TESTDATUM/ROBOT: 21/01/2026 - hub1
-BATTERIJ % BIJ START: 89%
+STATUS: botst nog tegen klein blokje in het midden, gooide artifact weg + hulpstuk gemakkelijker vastmaken!
+TESTDATUM/ROBOT: 26/01/2026 - hub1
+BATTERIJ % BIJ START: 91%
 
 ---------------
 """

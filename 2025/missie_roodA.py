@@ -3,15 +3,15 @@ from functies import *
 """
 ---------------
 BOUWER(S):  Simon - Arthur - Lennert - Lars
-MISSIE(S): 12 (boot met zand) + 11 (kraan)
-PUNTEN: 20 + 10 + 20 + 10
+MISSIE(S): 12 (boot met zand) + 11 (kraan) + 10(scale pan) + 9 (wares)
+PUNTEN: 20 + 10 + 20 + 10 + 10 + 10
 
 STARTVELD: LINKS
 STARTPOSITIE: Rechts zwarte streepje, voorkant robot
 
-STATUS: deel 2 werkt nog niet volledig + nog twee extra missies toevoegen
-LAATSTE TESTDATUM/ROBOT: (21/01/2026 - hub1)
-BATTERIJ % BIJ START: 89,17%
+STATUS: neemt hoepel nog niet mee
+LAATSTE TESTDATUM/ROBOT: (26/01/2026 - hub1)
+BATTERIJ % BIJ START: 91%
 ---------------
 """
 
@@ -41,10 +41,10 @@ async def missie_roodA_start():
     await links(45)
     await vooruit(210)
     await rechterarm.run_angle(600, -180)
-    await achteruit(180)
+    await achteruit(170)
     await rechterarm.run_angle(600, 180)
     await links(45)
-    await achteruit(20)
+    await achteruit(5)
     await rechterarm.run_angle(600, -180)
     await achteruit(120, 400)
     await links(45)

@@ -4,14 +4,14 @@ from functies import *
 ---------------
 BOUWERS: Lennert - Lucas
 MISSIE(S): 1 (surface brussing)- 6 (rotsblokken) - 14 (borstel) - 5 (schuine vloer)
-PUNTEN: 10 + 10 , 10, 5, 30
+PUNTEN: 10 + 10 + 10 , 10 + 10 + 10, 5, 30
 
 STARTVELD: LINKS
 STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 
 STATUS: laatste missie nog checken
-TESTDATUM/ROBOT: 21/01/2026 - hub1
-BATTERIJ % BIJ START: 98,63%
+TESTDATUM/ROBOT: 26/01/2026 - hub1
+BATTERIJ % BIJ START: 91%
 ---------------
 """
 async def missie_groenA_start():
