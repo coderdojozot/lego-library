@@ -11,8 +11,8 @@ STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 ARM?
 
 STATUS: 2de keer laatste missie rijdt nog te ver vooruit
-TESTDATUM/ROBOT: 26/01/2026 - hub1
-BATTERIJ % BIJ START: 91%
+TESTDATUM/ROBOT: 28/01/2026 - hub1
+BATTERIJ % BIJ START: 85%
 ---------------
 """
 
@@ -25,7 +25,7 @@ async def missie_geelA_start():
    await wait(15)    
    await multitask(vooruit(2),rechts(70))
    await vooruit(670.65)  # Arm omhoog
-   await rechts(62.436)
+   await rechts(63)
    await vooruit(229.15, 900)                                      # Omhoogduwen winkelding
    await wait(10)
    await achteruit(200)
