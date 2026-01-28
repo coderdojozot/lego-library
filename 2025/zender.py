@@ -9,7 +9,7 @@ hub = PrimeHub(broadcast_channel=1)
 pressed = []
 
 while True:
-
+    pressed = []
     while not any(pressed):
         hub.ble.broadcast("stop")
         pressed = hub.buttons.pressed()
@@ -17,8 +17,9 @@ while True:
 
     while any(hub.buttons.pressed()):
         wait(10)
-    
-
+ 
     if Button.LEFT in pressed:
         hub.ble.broadcast("3vingers")
+        print("left button pressed")
+    wait(3000)
     
