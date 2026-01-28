@@ -11,8 +11,8 @@ STARTPOSITIE: 2de linkse zwarte streepje, linkerkant robot
 ARM?
 
 STATUS: 2de keer laatste missie rijdt nog te ver vooruit
-TESTDATUM/ROBOT: 26/01/2026 - hub1
-BATTERIJ % BIJ START: 91%
+TESTDATUM/ROBOT: 28/01/2026 - hub1
+BATTERIJ % BIJ START: 85%
 ---------------
 """
 
