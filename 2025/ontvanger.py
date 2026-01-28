@@ -5,16 +5,19 @@ from pybricks.tools import wait
 
 # Initialize the hub.
 hub = PrimeHub(observe_channels=[1])
-Motor = Motor(Port.D)
+drievingers = Motor(Port.D)
+tweevingers = Motor(Port.B)
 hub.light.on(Color.RED)
 data = "0"
+angle_drie = 100
+angle_twee = 100
 while True:
     data = hub.ble.observe(1)
-    if data == "run":
-        hub.light.on(Color.GREEN)
-
-        Motor.run(1000)
-    elif data == "stop":
-        hub.light.on(Color.RED)
-
-        Motor.stop()
+    if data == "3vingers":
+        drievingers.angle(angle_drie)
+        drievingers.angle(-angel_drie)
+    elif data == "2vingers":
+        pass
+    else:
+        drievingers.stop()
+        tweevingers.stop()
