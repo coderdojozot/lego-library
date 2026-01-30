@@ -1,5 +1,5 @@
 from pybricks.hubs import PrimeHub
-from pybricks.pupdevices import Motor, ColorSensor
+from pybricks.pupdevices import Motor, ColorSensor, ForceSensor
 from pybricks.parameters import Port, Button
 from pybricks.tools import wait
 
@@ -7,19 +7,20 @@ from pybricks.tools import wait
 hub = PrimeHub(broadcast_channel=1)
 
 pressed = []
+button3vinger = ForceSensor(Port.C)
+button2vinger = ForceSensor(Port.A) or ForceSensor(Port.E)
+
+
 
 while True:
-    pressed = []
-    while not any(pressed):
-        hub.ble.broadcast("stop")
-        pressed = hub.buttons.pressed()
-        wait(10)
-
-    while any(hub.buttons.pressed()):
-        wait(10)
- 
-    if Button.LEFT in pressed:
+    if button3vinger.pressed() == True:
         hub.ble.broadcast("3vingers")
-        print("left button pressed")
-    wait(3000)
+        print("3vingers verzonden")
+    elif button3vinger.pressed() == False:
+        hub.ble.broadcast("0")
+    elif button2vinger.pressed() == True:
+        hub.ble.broadcast("2vingers")
+        print("2vingers verzonden")
+    elif button2vinger.pressed() == False:
+        hub.ble.broadcast("0")
     
