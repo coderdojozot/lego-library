@@ -19,15 +19,19 @@ while True:
     if data == "3vingers":
         start_positie3 = drievingers.angle()
         
-        drievingers.run_until_stalled(500, duty_limit=70)
+        eindpositie3 = drievingers.run_until_stalled(500, duty_limit=70)
+        drievingers.stop()
         print("Drie vingers gesloten")
-        eind_positie3 = drievingers.angle()
+        
         data = hub.ble.observe(1)
+        print(data)
         if data == "0":
+            drievingers.stop()
             print("start openen drie vingers")
-            naar_start_positie3 = start_positie3 - eind_positie3
-            drievingers.run_angle(500, naar_start_positie3)
-            print("Drie vinges open")
+            naar_start_positie3 = start_positie3 - eindpositie3
+            print(naar_start_positie3)
+            drievingers.run_angle(500, -100)
+            print("Drie vingers open")
 
     elif data == "2vingers":
         start_positie2 = tweevingers.angle()
