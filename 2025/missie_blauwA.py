@@ -10,8 +10,8 @@ STARTVELD: RECHTS
 STARTPOSITIE: Links tweede zwarte dikke streep, linkerkant robot
 OPGELET: staaf volledig omhoog! --> makkelijkst als je dat op voorhand doet
 
-STATUS: botst nog tegen klein blokje in het midden, gooide artifact weg + hulpstuk gemakkelijker vastmaken!
-TESTDATUM/ROBOT: 26/01/2026 - hub1
+STATUS: botst nog tegen klein blokje in het midden / getest tot aan molensteen neerzetten
+TESTDATUM/ROBOT: 2/02/2026 - hub2
 BATTERIJ % BIJ START: 91%
 
 ---------------
@@ -32,23 +32,21 @@ async def missie_blauwA_start():
   await rechterarm.run_angle(1000,-200)
   await rechterarm.run_angle(1000,200)
   await links(90)
-  await vooruit(70)
+  await vooruit(90)
   await rechts(90)
-  await vooruit(325)
-  await rechts(53)
+  await vooruit(340)
+  await rechts(45)
   await achteruit(120)
-  await linkerarm_draai(1861)
-  #await achteruit(15)
+  await linkerarm_draai(1868) #molensteen
   await vooruit(80)
-  await linkerarm_draai(-1300)
+  await linkerarm_draai(-1300) #molensteen opheffen
   await links(133)
   await multitask(linkerarm_draai(-280), vooruit(660))
-  await links(75)
-  await vooruit(45)
+  await links(55)
   await linkerarm_draai(1680)
-  await achteruit(50)
+  await achteruit(60)
   await rechts(15)  #molensteen lossen
-  await achteruit(35)
+  await achteruit(45)
   await linkerarm_draai(-300)
   await achteruit(22)
   await vooruit(35)
