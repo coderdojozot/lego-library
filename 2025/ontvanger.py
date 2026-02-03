@@ -39,10 +39,11 @@ while True:
                 print("Drie vingers open")
                 break
         
+    data = hub.ble.observe(1)
 
-    elif data == "2vingers":
+    if data == "2vingers":
         start_positie2 = tweevingers.angle()
-        eindpositie2 = tweevingers.run_until_stalled(1000, duty_limit=28)
+        eindpositie2 = tweevingers.run_until_stalled(1000, duty_limit=35)
         tweevingers.stop()
         print("Twee vingers gesloten")
         data = hub.ble.observe(1)
@@ -63,7 +64,10 @@ while True:
                 tweevingers.brake()
                 print("Twee vingers open")
                 break
-    elif data == "2 en 3":
+    data = hub.ble.observe(1)
+    
+    if data == "2 en 3":
+        print("start 2 en 3")
         start_positie3 = drievingers.angle()
         start_positie2 = tweevingers.angle()
         eindpositie3 = drievingers.run_until_stalled(500, duty_limit=70)
