@@ -36,11 +36,12 @@ async def missie_blauwA_start():
   await rechts(90)
   await vooruit(340)
   await rechts(52)
-  await achteruit(115)
+  await achteruit(100)
+  # await rechts(5)
   await linkerarm_draai(1868) #molensteen
-  await vooruit(80)
+  await vooruit(70)
   await linkerarm_draai(-1300) #molensteen opheffen
-  await links(133)
+  await links(133,100)
   await multitask(linkerarm_draai(-280), vooruit(660))
   await links(55)
   await linkerarm_draai(1700)
@@ -48,7 +49,7 @@ async def missie_blauwA_start():
   await rechts(15)  #molensteen lossen
   await achteruit(40)
   await linkerarm_draai(-300)
-  await rechts(10)
+  await rechts(15)
   await vooruit(750)
   await links(45)
   await vooruit(400)
