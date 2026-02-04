@@ -7,12 +7,12 @@ MISSIE(S): 7 (molensteen) - 8 (silo muur)
 PUNTEN: 30, 10x3
 
 STARTVELD: RECHTS
-STARTPOSITIE: Links tweede zwarte dikke streep, linkerkant robot
+STARTPOSITIE: 3mm links van tweede zwarte linkse dikke streep, linkerkant robot
 OPGELET: staaf volledig omhoog! --> makkelijkst als je dat op voorhand doet
 
-STATUS: botst nog tegen klein blokje in het midden / getest tot aan molensteen neerzetten
-TESTDATUM/ROBOT: 2/02/2026 - hub2
-BATTERIJ % BIJ START: 91%
+STATUS: werkt volledig
+TESTDATUM/ROBOT: 2/02/2026 - hub1
+BATTERIJ % BIJ START: 98%
 
 ---------------
 """
@@ -35,7 +35,7 @@ async def missie_blauwA_start():
   await vooruit(90)
   await rechts(90)
   await vooruit(340)
-  await rechts(45)
+  await rechts(52)
   await achteruit(120)
   await linkerarm_draai(1868) #molensteen
   await vooruit(80)
@@ -43,17 +43,14 @@ async def missie_blauwA_start():
   await links(133)
   await multitask(linkerarm_draai(-280), vooruit(660))
   await links(55)
-  await linkerarm_draai(1680)
-  await achteruit(60)
+  await linkerarm_draai(1700)
+  await achteruit(55)
   await rechts(15)  #molensteen lossen
-  await achteruit(45)
+  await achteruit(40)
   await linkerarm_draai(-300)
-  await achteruit(22)
-  await vooruit(35)
-  await rechts(27)
-  await vooruit(625)
-  await links(50)
-  await vooruit(50)
+  await rechts(10)
+  await vooruit(750)
+  await links(45)
   await vooruit(400)
 
 # Deze regel zorgt ervoor dat de code uitgevoerd wordt
