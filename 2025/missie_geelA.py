@@ -18,13 +18,13 @@ BATTERIJ % BIJ START: 85%
 
 async def missie_geelA_start():
    await vooruit(733.5)
-   await rechts(87)
+   await rechts(86)
    await vooruit(362)
    await links(80)
    await multitask(vooruit(2.375),rechterarm.run_angle(923.5,-2100)) # Heffen mijnkarretje
    await wait(15)    
    await multitask(vooruit(2),rechts(72))
-   await vooruit(666.56)  # Arm omhoog
+   await vooruit(665)  # Arm omhoog
    await rechts(57)
    await vooruit(231.55, 900)                                      # Omhoogduwen winkelding
    await wait(10)
@@ -36,7 +36,7 @@ async def missie_geelA_start():
    await vooruit(2)                        # Omhoogduwen winkelding
    await wait(10)
    await achteruit(203)
-   await vooruit(231.35, 900)                                      # Omhoogduwen winkelding
+   await vooruit(231.15, 900)                                      # Omhoogduwen winkelding
    await wait(10)
    await achteruit(203)
    await links(18)
