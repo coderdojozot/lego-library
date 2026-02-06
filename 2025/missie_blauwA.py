@@ -30,7 +30,7 @@ async def missie_blauwA_start():
   await rechterarm.run_angle(1000,-200)
   await rechterarm.run_angle(1000,200)
   await rechterarm.run_angle(1000,-200)
-  await rechterarm.run_angle(1000,200)
+  await rechterarm.run_angle(1000,200) #klaar tandwielen uit silo
   await links(90)
   await vooruit(90)
   await rechts(90)

@@ -26,10 +26,10 @@ async def missie_geelA_start():
    await multitask(vooruit(2),rechts(72))
    await vooruit(665)  # Arm omhoog
    await rechts(57)
-   await vooruit(231.55, 900)                                      # Omhoogduwen winkelding
+   await vooruit(231.35, 900)                                      # Omhoogduwen winkelding
    await wait(10)
    await achteruit(203)
-   await vooruit(231.45, 900)    
+   await vooruit(231.35, 900)    
    await achteruit(1)         
    await vooruit(4) 
    await achteruit(1)
