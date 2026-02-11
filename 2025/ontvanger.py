@@ -49,7 +49,7 @@ async def main():
         if data == "3vingers":
             
             start_positie3 = drievingers.angle()
-            eindpositie3 = await drievingers.run_until_stalled(500, duty_limit=70)
+            eindpositie3 = await drievingers.run_until_stalled(1000, duty_limit=70)
             drievingers.stop()
             print("Drie vingers gesloten")
             data = hub.ble.observe(1)
@@ -66,7 +66,7 @@ async def main():
                     print("start openen drie vingers")
                     naar_start_positie3 = start_positie3 - eindpositie3
                     print(naar_start_positie3)
-                    await drievingers.run_angle(500, naar_start_positie3)
+                    await drievingers.run_angle(1000, naar_start_positie3)
                     drievingers.brake()
                     print("Drie vingers open")
                     break
@@ -92,7 +92,7 @@ async def main():
                     print("start openen twee vingers")
                     naar_start_positie2 = start_positie2 - eindpositie2
                     print(naar_start_positie2)
-                    await tweevingers.run_angle(500, naar_start_positie2)
+                    await tweevingers.run_angle(1000, naar_start_positie2)
                     tweevingers.brake()
                     print("Twee vingers open")
                     break
